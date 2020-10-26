@@ -1,4 +1,4 @@
-import React, { Component ,useEffect} from 'react'
+import React, { Component } from 'react'
 import { Segment,Form,Button } from 'semantic-ui-react';
 const emptyEvent={
   title :'',
@@ -32,7 +32,7 @@ class EventForm extends Component {
       if(this.state.event.id){
         this.props.updateEvent(this.state.event)
       }else
-      this.props.createEvent(this.state.event);
+        this.props.createEvent(this.state.event);
     } 
     onInputChange=(evt)=>{
       const newEvent = this.state.event;
