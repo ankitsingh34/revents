@@ -9,6 +9,7 @@ import PeopleDashboard from '../../features/user/PeopleDashboard/PeopleDashboard
 import UserDetailedPage  from '../../features/user/UserDetailed/UserDetailedPage';
 import SettingDashboard from '../../features/user/Settings/SettingDashboard';
 import  HomePage from '../../features/home/HomePage';
+import  TestComponent from '../../features/testarea/TestComponent'
 
 const App=()=> {
   return (
@@ -27,6 +28,7 @@ const App=()=> {
                <Route  path='/profile/:id' component={UserDetailedPage}/>
                <Route  path='/settings' component={SettingDashboard}/>
                <Route  path='/createEvent' component={EventForm}/>
+              <Route path='/test' component={TestComponent}/>
              </Switch>
            </Container>
          </div>
